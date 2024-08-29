@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Beginner Web Developer</p>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-link" onclick="openTab(event, 'home')">Home</button>
+        <button class="tab-link" onclick="openTab(event, 'projects')">Projects</button>
+        <button class="tab-link" onclick="openTab(event, 'about')">About Me</button>
+        <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+    </nav>
+
+    <main>
+        <section id="home" class="tab-content">
+            <h3>Home</h3>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Welcome to my portfolio! I'm Adam Venclovský, a beginner in web development, and created this page to practice JavaScript, CSS, and HTML. Feel free to explore my projects and learn about my skills.</p>
+                </div>
+            </section>
+        
+            <section class="introduction">
+                <div class="profile-picture">
+                    <img id="profile-picture" src="pictures/profile pic.jpg" alt="Adam Venclovský">
+                    <button id="toggle-button">Show/Hide Profile Picture</button>
+                </div>
+                <div class="intro-text">
+                    <h2>Who Am I?</h2>
+                    <p>I'm an IT student passionate about learning new things. I'm ambitious, with a dream of finding a good job in fields such as mathematics and IT. I'm always willing to share my experience with anyone who asks. I am flexible, with a good ability to adapt, and I am goal-oriented, always putting in the highest effort to achieve the best possible results.</p>
+                </div>
+            </section>
+        </section>
+        
+        <section id="projects" class="tab-content" style="display:none">
+            <h3>Projects</h3>
+            <div class="project">
+                <h3>Task Manager</h3>
+                <p>I created a simple desktop console application that helps manage tasks, giving them priority, category, deadlines, etc.</p>
+                <span class="status completed">Finished but considering improvements</span>
+            </div>
+            <div class="project">
+                <h3>Home Server</h3>
+                <p>At home, we have a few old PCs, and I would like to try to build my own home server out of them.</p>
+                <span class="status planning">Not Started</span>
+            </div>
+            <div class="project">
+                 <h3>Mobile Game</h3>
+                 <p>I want to create a simple mobile game and display it on Google Play. I've already researched how to develop the application and how to publish it, but I need some time to start.</p>
+                 <span class="status planning">Not Started</span>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content" style="display:none">
+            <h3>About Me</h3>
+            <div class="education">
+                <h2>Education and Certification</h2>
+                <div class="edu-item">
+                    <h3>Gymnázium T. G. Masaryka in Zastávka</h3>
+                    <p>Secondary education successfully completed with the Maturita examination.</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Masaryk University in Brno</h3>
+                    <p>Informatics and Mathematics with a focus on Education.</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (Basics)</li>
+                    <li>Git & GitLab</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>UML Diagrams</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="interests">
+                <h2>Personal Interests</h2>
+                <div class="interest-item">
+                    <h3>Fitness</h3>
+                    <p>I've been going to the gym for a couple of years and I am confident that I understand most lifting techniques. I'm also able to help newcomers to the gym.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Floorball</h3>
+                    <p>I've been playing floorball since elementary school, and I continue to play it once a week in my free time with friends.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Table Tennis</h3>
+                    <p>I used to play table tennis a lot in secondary school and even won a tournament back in the day.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Beef Jerky</h3>
+                    <p>A year ago, I experimented with making beef jerky using a fruit dryer. It turned out really well, and after some practice, I was able to sell it. Unfortunately, I don't have much time for it nowadays.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content" style="display:none">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:adamvenclovsky@seznam.cz">adamvenclovsky@seznam.cz</a></p>
+            <p>LinkedIn: <a href="https://cz.linkedin.com/in/adam-venclovský-60a9a2223" target="_blank">My LinkedIn</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Adam Venclovský. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
